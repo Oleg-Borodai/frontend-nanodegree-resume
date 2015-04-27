@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.education-entry, .work-entry, .project-entry, .onlineclass {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -205,6 +205,10 @@ span {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
+}
+
+#skills {
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 750px) {
