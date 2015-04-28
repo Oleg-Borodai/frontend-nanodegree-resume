@@ -1,17 +1,17 @@
 var bio = {
-    name: "Oleg Borodai",
-    role: "Nanodegree student",
-    contacts: {
-        mobile: "+49 152 2428 1050",
-        email: "borodai.oleg@gmail.com",
-        github: "https://github.com/Oleg-Borodai",
-        twitter: "twiter.com",
-        location: "Hamburg, Germany"
+    "name": "Oleg Borodai",
+    "role": "Nanodegree student",
+    "contacts": {
+        "mobile": "+49 152 2428 1050",
+        "email": "borodai.oleg@gmail.com",
+        "github": "https://github.com/Oleg-Borodai",
+        "twitter": "twiter.com",
+        "location": "Hamburg, Germany"
     },
-    welcomeMessage: "Welcome message appears here!!!!",
-    skills: ["SQL Server Integration Services","SQL Server Analysis Services","SQL Server Reporting Services","HTML/CSS","JavaScript"],
-    biopic: "images/fry.jpg",
-    display: function(){
+    "welcomeMessage": "Welcome message appears here!!!!",
+    "skills": ["SQL Server Integration Services","SQL Server Analysis Services","SQL Server Reporting Services","HTML/CSS","JavaScript"],
+    "biopic": "images/fry.jpg",
+    "display": function(){
         var formatted_name = HTMLheaderName.replace("%data%",this.name);
         $("#header").prepend(formatted_name);
 
@@ -48,30 +48,30 @@ var bio = {
 };
 
 var work = {
-    jobs: [
+    "jobs": [
         {
-            employer: "gamigo AG",
-            title: "Business Intelligence Developer",
-            location: "Hamburg",
-            dates: "January 2013 - present",
-            description: "gamigo AG, based in Hamburg, Germany is an online games publisher. It focuses on massively multiplayer online role-playing games, licensing games from developers for a North American and European audience. Gamigo has a total of well over 35 million registered game accounts worldwide"
+            "employer": "gamigo AG",
+            "title": "Business Intelligence Developer",
+            "location": "Hamburg",
+            "dates": "January 2013 - present",
+            "description": "gamigo AG, based in Hamburg, Germany is an online games publisher. It focuses on massively multiplayer online role-playing games, licensing games from developers for a North American and European audience. Gamigo has a total of well over 35 million registered game accounts worldwide"
         },
         {
-            employer: "FarTop",
-            title: "Business Intelligence Developer",
-            location: "Dnipropetrovsk",
-            dates: "February 2009 - January 2013",
-            description: "FarTop, based in Dnipropetrovsk, Ukraine is a chain of pharmacies with over 60 stores in six biggest Ukrainian cities. FarTop has about 500 employees and more than 20000 distinct SKU of products on stores’ shelves"
+            "employer": "FarTop",
+            "title": "Business Intelligence Developer",
+            "location": "Dnipropetrovsk",
+            "dates": "February 2009 - January 2013",
+            "description": "FarTop, based in Dnipropetrovsk, Ukraine is a chain of pharmacies with over 60 stores in six biggest Ukrainian cities. FarTop has about 500 employees and more than 20000 distinct SKU of products on stores’ shelves"
         },
         {
-            employer: "FarTop",
-            title: "System Administrator",
-            location: "Dnipropetrovsk",
-            dates: "September 2007 - February 2009",
-            description: "FarTop, based in Dnipropetrovsk, Ukraine is a chain of pharmacies with over 60 stores in six biggest Ukrainian cities. FarTop has about 500 employees and more than 20000 distinct SKU of products on stores’ shelves"
+            "employer": "FarTop",
+            "title": "System Administrator",
+            "location": "Dnipropetrovsk",
+            "dates": "September 2007 - February 2009",
+            "description": "FarTop, based in Dnipropetrovsk, Ukraine is a chain of pharmacies with over 60 stores in six biggest Ukrainian cities. FarTop has about 500 employees and more than 20000 distinct SKU of products on stores’ shelves"
         }
     ],
-    display: function(){
+    "display": function(){
         for(var i = 0; i < this.jobs.length; i++){
             $("#workExperience").append(HTMLworkStart);
             var formatted_job = HTMLworkEmployer.replace("%data%", this.jobs[i].employer) +
@@ -85,39 +85,39 @@ var work = {
 };
 
 var education = {
-    schools: [
+    "schools": [
         {
-            name: "Dnipropetrovsk State University",
-            location: "Dnipropetrovsk",
-            degree: "Master of Electrical engineering",
-            majors: ["string1", "string2", "string3"],
-            dates: 1296518400,
-            url: "http://www.dnu.dp.ua/"
+            "name": "Dnipropetrovsk State University",
+            "location": "Dnipropetrovsk",
+            "degree": "Master of Electrical engineering",
+            "majors": ["string1", "string2", "string3"],
+            "dates": 1296518400,
+            "url": "http://www.dnu.dp.ua/"
         },
         {
-            name: "Lyceum of Informational Technologies",
-            location: "Dnipropetrovsk",
-            degree: "Basic education",
-            majors: ["string1", "string2", "string3"],
-            dates: 1116979200,
-            url: "http://www.lit.dp.ua/"
+            "name": "Lyceum of Informational Technologies",
+            "location": "Dnipropetrovsk",
+            "degree": "Basic education",
+            "majors": ["string1", "string2", "string3"],
+            "dates": 1116979200,
+            "url": "http://www.lit.dp.ua/"
         },
     ],
-    onlineCourses: [
+    "onlineCourses": [
         {
-            title: "Front-End web developer Nanodegree",
-            school: "Udacity",
-            date: 1447027200,
-            url: "http://udacity.com"
+            "title": "Front-End web developer Nanodegree",
+            "school": "Udacity",
+            "date": 1447027200,
+            "url": "http://udacity.com"
         },
         {
-            title: "JavaScript track",
-            school: "Codeacademy",
-            date: 1337904000,
-            url: "http://codeacademy.com"
+            "title": "JavaScript track",
+            "school": "Codeacademy",
+            "date": 1337904000,
+            "url": "http://codeacademy.com"
         }
     ],
-    display: function(){
+    "display": function(){
         for(var i = 0; i < this.schools.length; i++){
             $("#education").append(HTMLschoolStart);
             $(".education-entry:last").append(
@@ -143,21 +143,21 @@ var education = {
 };
 
 var projects = {
-    projects: [
+    "projects": [
         {
-            title: "project1",
-            dates: "January 2013 - March 2013",
-            description: "Project 1 description goes here",
-            images: ["images/Project-Image.jpg","images/Project-Image.jpg"]
+            "title": "project1",
+            "dates": "January 2013 - March 2013",
+            "description": "Project 1 description goes here",
+            "images": ["images/Project-Image.jpg","images/Project-Image.jpg"]
         },
         {
-            title: "project2",
-            dates: "January 2014 - March 2015",
-            description: "Project 2 description goes here",
-            images: ["images/Project-Image.jpg","images/Project-Image.jpg"]
+            "title": "project2",
+            "dates": "January 2014 - March 2015",
+            "description": "Project 2 description goes here",
+            "images": ["images/Project-Image.jpg","images/Project-Image.jpg"]
         }
     ],
-    display: function(){
+    "display": function(){
         for(var i = 0; i < this.projects.length; i++){
             $("#projects").append(HTMLprojectStart);
             $(".project-entry:last").append(
